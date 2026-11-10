@@ -1,0 +1,43 @@
+{
+  "name": "zalbook-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:mutation": "stryker run",
+    "api:generate": "openapi-typescript openapi.json -o src/shared/api/schema.d.ts",
+    "format": "prettier --write src scripts *.ts *.json *.html README.md"
+  },
+  "dependencies": {
+    "@primeuix/themes": "^1.2.0",
+    "@tanstack/vue-query": "^5.90.0",
+    "@vee-validate/zod": "^4.15.0",
+    "axios": "^1.12.0",
+    "pinia": "^3.0.0",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.4.0",
+    "vee-validate": "^4.15.0",
+    "vue": "^3.5.0",
+    "vue-router": "^4.6.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@stryker-mutator/core": "^9.0.0",
+    "@stryker-mutator/vitest-runner": "^9.0.0",
+    "@types/node": "^24.0.0",
+    "@vitejs/plugin-vue": "^6.0.0",
+    "@vue/test-utils": "^2.4.0",
+    "jsdom": "^26.0.0",
+    "openapi-typescript": "^7.10.0",
+    "prettier": "^3.9.10",
+    "typescript": "~5.9.0",
+    "vite": "^7.1.0",
+    "vitest": "^3.2.0",
+    "vue-tsc": "^3.1.0"
+  }
+}

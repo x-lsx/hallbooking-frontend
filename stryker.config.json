@@ -1,0 +1,9 @@
+{
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "testRunner": "vitest",
+  "vitest": { "configFile": "vitest.config.ts" },
+  "mutate": ["src/shared/lib/dates.ts", "src/features/bookings/validation.ts"],
+  "reporters": ["clear-text", "html"],
+  "coverageAnalysis": "perTest",
+  "concurrency": 2
+}

@@ -1,0 +1,8 @@
+src/shared/api/schema.d.ts
+openapi.json
+package-lock.json
+node_modules/
+dist/
+reports/
+.npm-cache/
+.stryker-tmp/
